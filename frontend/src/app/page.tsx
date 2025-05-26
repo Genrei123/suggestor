@@ -49,7 +49,7 @@ export default function Home() {
       return;
     }
 
-    await navigator.clipboard.writeText(suggestion);
+    await navigator.clipboard.writeText("git add . " + "\n" + suggestion);
     setMessage("");
 
 
