@@ -7,6 +7,7 @@ import axiosInstance from "@/_config/axiosInstance";
 import { Progress } from "@/components/ui/progress";
 import { Link, Loader2 } from "lucide-react";
 import dotenv from 'dotenv'
+import { toast } from "sonner";
 dotenv.config()
 
 export default function Home() {
@@ -48,9 +49,11 @@ export default function Home() {
     if (suggestion === null) {
       return;
     }
+    
 
     await navigator.clipboard.writeText("git add . " + "\n" + suggestion);
     setMessage("");
+    toast("Stylish Commit Message has been copied in your clipboard.")
 
 
   }
