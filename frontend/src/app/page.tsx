@@ -64,7 +64,7 @@ export default function Home() {
       <div className="flex items-center justify-center h-screen">
         <div className="p-4">
           <div className="flex flex-inline space-x-64">
-            <p className = "justify-start italic">For those who don't have a taste</p>
+            <p className = "justify-start italic">For those who dont have a taste</p>
             <Image src="favicon.ico" alt = "icon" />
           </div>
           <h1 className="scroll-m-20 text-4xl tracking-tight lg:text-5xl mb-4">Git Well Committed</h1>
