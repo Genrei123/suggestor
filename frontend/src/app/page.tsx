@@ -2,12 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axiosInstance from "@/_config/axiosInstance";
 import { Progress } from "@/components/ui/progress";
-import { Link, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import dotenv from 'dotenv'
 import { toast } from "sonner";
+import Image from 'next/image'
 dotenv.config()
 
 export default function Home() {
@@ -64,7 +65,7 @@ export default function Home() {
         <div className="p-4">
           <div className="flex flex-inline space-x-64">
             <p className = "justify-start italic">For those who don't have a taste</p>
-            <img src="favicon.ico"></img>
+            <Image src="favicon.ico" alt = "icon" />
           </div>
           <h1 className="scroll-m-20 text-4xl tracking-tight lg:text-5xl mb-4">Git Well Committed</h1>
           <p className="mb-4 italic">and for those who have taste....</p>
